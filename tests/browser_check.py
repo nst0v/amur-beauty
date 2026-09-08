@@ -51,9 +51,9 @@ try:
             expect(page.locator('html')).to_have_attribute('lang','ru')
             assert page.locator('meta[name="robots"]').get_attribute('content')=='noindex, nofollow'
             assert not page.evaluate('document.documentElement.scrollWidth > innerWidth + 1'),f'Horizontal overflow at {width}'
-            # Force image loading only for screenshots; the production page keeps lazy loading.
+            # Eager images are used only to capture the full-page preview.
             page.locator('img[src]').evaluate_all('images=>images.forEach(img=>img.loading="eager")')
-            page.wait_for_function('Array.from(document.querySelectorAll("img[src^=\"./\"]")).every(img=>img.complete&&img.naturalWidth>0)')
+            page.wait_for_function("""Array.from(document.images).filter(img=>img.getAttribute('src')?.startsWith('./')).every(img=>img.complete&&img.naturalWidth>0)""")
             if width in [390,1440]:
                 page.wait_for_timeout(1000)
                 page.screenshot(path=str(OUT/f'preview-{width}.png'),full_page=True)
