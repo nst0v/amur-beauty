@@ -10,8 +10,13 @@
   function openDialog(dialog, trigger) {
     if (!dialog || typeof dialog.showModal !== 'function') return false;
     const open = $('dialog[open]');
-    if (open && open !== dialog) open.close();
-    restoreFocus = trigger || document.activeElement;
+    let focusTarget = trigger || document.activeElement;
+    if (open && open !== dialog) {
+      // A link inside a closing dialog is no longer a valid focus destination.
+      if (open.contains(focusTarget)) focusTarget = restoreFocus || $('.menu-toggle');
+      open.close();
+    }
+    restoreFocus = focusTarget;
     dialog.showModal();
     return true;
   }
