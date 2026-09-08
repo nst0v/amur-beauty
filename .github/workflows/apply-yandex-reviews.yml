@@ -4,6 +4,7 @@ on:
     paths:
       - 'scripts/use-yandex-reviews.py'
       - '.github/workflows/apply-yandex-reviews.yml'
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
@@ -15,7 +16,7 @@ jobs:
       - run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html
-          git commit -m 'content: replace DIKIDI reviews with Yandex Maps reviews'
+          git add index.html app.js
+          git commit -m 'content: use Yandex rating and generic online booking wording'
           git pull --rebase origin main
           git push origin HEAD:main
