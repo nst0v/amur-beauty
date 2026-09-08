@@ -1,0 +1,38 @@
+name: Verify Amur website
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'styles.css'
+      - 'app.js'
+      - 'assets/**'
+      - 'tests/**'
+      - '.github/workflows/site-check.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: amur-site-check
+  cancel-in-progress: true
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: node --check app.js
+      - name: Install browser test tools
+        run: |
+          python3 -m pip install playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Check mobile layouts, prices, booking, gallery and keyboard access
+        run: python3 tests/browser_check.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: amur-website-preview
+          path: test-results/
+          retention-days: 7
+          if-no-files-found: error

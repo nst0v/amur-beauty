@@ -1,0 +1,8 @@
+test-results/
+source-research/
+source-details/
+current-research/
+__pycache__/
+.DS_Store
+*.log
+amur-beauty-demo.zip
