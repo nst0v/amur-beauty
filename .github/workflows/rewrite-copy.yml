@@ -1,0 +1,21 @@
+name: Rewrite salon copy
+on:
+  push:
+    paths:
+      - 'scripts/rewrite-copy.py'
+      - '.github/workflows/rewrite-copy.yml'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/rewrite-copy.py
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m 'content: replace abstract copy with concrete salon text'
+          git pull --rebase origin main
+          git push origin HEAD:main
