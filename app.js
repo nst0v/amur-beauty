@@ -43,12 +43,12 @@
   $$('[data-book]').forEach(anchor => {
     anchor.addEventListener('click', event => {
       if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-      // Without dialog support the original DIKIDI link remains the working fallback.
+      // Without dialog support the original booking link remains the working fallback.
       if (typeof booking.showModal !== 'function') return;
       event.preventDefault();
       const service = anchor.dataset.service;
       const chosen = $('#selected-service');
-      chosen.textContent = service ? `Вас интересует: ${service}. Выбор услуги нужно подтвердить в DIKIDI или сообщениях студии.` : '';
+      chosen.textContent = service ? `Вас интересует: ${service}. Выбор услуги и времени нужно подтвердить в форме онлайн-записи.` : '';
       chosen.hidden = !service;
       openDialog(booking, anchor);
     });
