@@ -1,21 +1,52 @@
-name: Fix mobile hero note
+name: Refine and verify hero layout
 on:
   push:
+    branches: [main]
     paths:
       - 'scripts/fix-mobile-hero-note.py'
       - '.github/workflows/fix-mobile-hero-note.yml'
+  workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: amur-hero-layout
+  cancel-in-progress: true
 jobs:
   apply:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scripts/fix-mobile-hero-note.py
-      - run: |
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Apply the scoped hero layout correction
+        run: python3 scripts/fix-mobile-hero-note.py
+      - name: Check migration idempotence and JavaScript syntax
+        run: |
+          sha256sum index.html styles.css > /tmp/hero-before.sha
+          python3 scripts/fix-mobile-hero-note.py
+          sha256sum --check /tmp/hero-before.sha
+          node --check app.js
+      - name: Install browser test tools
+        run: |
+          python3 -m pip install playwright
+          python3 -m playwright install --with-deps chromium webkit
+      - name: Verify photo contour, card alignment, spacing and booking
+        run: python3 scripts/fix-mobile-hero-note.py --verify
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: amur-hero-layout-preview
+          path: test-results/hero-layout/
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Commit verified website files
+        run: |
+          git add index.html styles.css
+          if git diff --cached --quiet; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add styles.css
-          git commit -m 'fix: move mobile working-hours card above hero image'
+          git commit -m 'fix: align hero outline to photo and place hours and rating below it'
           git pull --rebase origin main
           git push origin HEAD:main
