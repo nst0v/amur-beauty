@@ -1,0 +1,30 @@
+name: Inspect public booking catalog
+on:
+  push:
+    paths: ['scripts/inspect-public-booking.py', '.github/workflows/inspect-booking.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -u scripts/inspect-public-booking.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: amur-booking-research
+          path: |
+            booking-research/
+            index.html
+            app.js
+            *.css
+            assets/
+            tests/
+            scripts/
+            README.md
+            CONTENT-SOURCES.md
+          retention-days: 1
+          if-no-files-found: error
