@@ -1,0 +1,1500 @@
+{
+  "schemaVersion": 1,
+  "companyId": "1006138",
+  "fetchedAt": "2026-09-09T06:38:28.071121+00:00",
+  "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/services",
+  "declaredCounts": {
+    "services": "44",
+    "masters": "7"
+  },
+  "services": [
+    {
+      "id": "11473198",
+      "name": "Дизайн на ваш выбор",
+      "category": "Без категории",
+      "categoryId": "5133077",
+      "price": "50 ₽",
+      "priceValue": 50,
+      "priceFrom": false,
+      "duration": "15 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/11473198",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=11473198",
+      "masterIds": [
+        "4589356"
+      ],
+      "offerings": {
+        "4589356": {
+          "price": 50,
+          "priceFrom": false,
+          "durationMinutes": 15
+        }
+      },
+      "durationMinutes": 15,
+      "maxDurationMinutes": 15
+    },
+    {
+      "id": "13949200",
+      "name": "Комбинированный маникюр без покрытия",
+      "category": "Без категории",
+      "categoryId": "5133077",
+      "price": "500 ₽",
+      "priceValue": 500,
+      "priceFrom": false,
+      "duration": "30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/13949200",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=13949200",
+      "masterIds": [
+        "3168786"
+      ],
+      "offerings": {
+        "3168786": {
+          "price": 500,
+          "priceFrom": false,
+          "durationMinutes": 30
+        }
+      },
+      "durationMinutes": 30,
+      "maxDurationMinutes": 30
+    },
+    {
+      "id": "23306397",
+      "name": "Маникюр мужской",
+      "category": "Без категории",
+      "categoryId": "5133077",
+      "price": "800 ₽",
+      "priceValue": 800,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/23306397",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=23306397",
+      "masterIds": [
+        "4589356"
+      ],
+      "offerings": {
+        "4589356": {
+          "price": 800,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "18942594",
+      "name": "Дизайн френч",
+      "category": "Дизайн френч",
+      "categoryId": "4651175",
+      "price": "400 ₽",
+      "priceValue": 400,
+      "priceFrom": false,
+      "duration": "25 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/18942594",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=18942594",
+      "masterIds": [
+        "4096713",
+        "4589356"
+      ],
+      "offerings": {
+        "4096713": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 25
+        },
+        "4589356": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 25
+        }
+      },
+      "durationMinutes": 25,
+      "maxDurationMinutes": 25
+    },
+    {
+      "id": "16488540",
+      "name": "Дизайн (френч)",
+      "category": "Дополнительные услуги",
+      "categoryId": "3556422",
+      "price": "400 ₽",
+      "priceValue": 400,
+      "priceFrom": false,
+      "duration": "30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16488540",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16488540",
+      "masterIds": [
+        "4295706"
+      ],
+      "offerings": {
+        "4295706": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 30
+        }
+      },
+      "durationMinutes": 30,
+      "maxDurationMinutes": 30
+    },
+    {
+      "id": "16488520",
+      "name": "Дизайн сложный",
+      "category": "Дополнительные услуги",
+      "categoryId": "3556422",
+      "price": "от 500 ₽",
+      "priceValue": 500,
+      "priceFrom": true,
+      "duration": "20 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16488520",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16488520",
+      "masterIds": [
+        "4096713",
+        "4295706"
+      ],
+      "offerings": {
+        "4096713": {
+          "price": 500,
+          "priceFrom": true,
+          "durationMinutes": 20
+        },
+        "4295706": {
+          "price": 500,
+          "priceFrom": true,
+          "durationMinutes": 20
+        }
+      },
+      "durationMinutes": 20,
+      "maxDurationMinutes": 20
+    },
+    {
+      "id": "11473226",
+      "name": "Лёгкий Дизайн",
+      "category": "Дополнительные услуги",
+      "categoryId": "3556422",
+      "price": "200 ₽",
+      "priceValue": 200,
+      "priceFrom": false,
+      "duration": "15 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/11473226",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=11473226",
+      "masterIds": [
+        "3168786",
+        "3585520",
+        "4096713",
+        "4589356"
+      ],
+      "offerings": {
+        "3168786": {
+          "price": 200,
+          "priceFrom": false,
+          "durationMinutes": 20
+        },
+        "3585520": {
+          "price": 200,
+          "priceFrom": false,
+          "durationMinutes": 20
+        },
+        "4096713": {
+          "price": 200,
+          "priceFrom": false,
+          "durationMinutes": 20
+        },
+        "4589356": {
+          "price": 200,
+          "priceFrom": false,
+          "durationMinutes": 15
+        }
+      },
+      "durationMinutes": 15,
+      "maxDurationMinutes": 20
+    },
+    {
+      "id": "11473332",
+      "name": "Ремонт ногтя",
+      "category": "Дополнительные услуги",
+      "categoryId": "3556422",
+      "price": "от 100 ₽",
+      "priceValue": 100,
+      "priceFrom": true,
+      "duration": "10 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/11473332",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=11473332",
+      "masterIds": [
+        "3168786",
+        "3585520",
+        "4096713",
+        "4295706"
+      ],
+      "offerings": {
+        "3168786": {
+          "price": 100,
+          "priceFrom": true,
+          "durationMinutes": 20
+        },
+        "3585520": {
+          "price": 100,
+          "priceFrom": true,
+          "durationMinutes": 20
+        },
+        "4096713": {
+          "price": 100,
+          "priceFrom": true,
+          "durationMinutes": 15
+        },
+        "4295706": {
+          "price": 100,
+          "priceFrom": true,
+          "durationMinutes": 10
+        }
+      },
+      "durationMinutes": 10,
+      "maxDurationMinutes": 20
+    },
+    {
+      "id": "18942646",
+      "name": "Дизайн лёгкий",
+      "category": "Лёгкий дизайн",
+      "categoryId": "4319757",
+      "price": "200 ₽",
+      "priceValue": 200,
+      "priceFrom": false,
+      "duration": "20 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/18942646",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=18942646",
+      "masterIds": [
+        "4295706"
+      ],
+      "offerings": {
+        "4295706": {
+          "price": 200,
+          "priceFrom": false,
+          "durationMinutes": 20
+        }
+      },
+      "durationMinutes": 20,
+      "maxDurationMinutes": 20
+    },
+    {
+      "id": "9808112",
+      "name": "Коррекция наращивания",
+      "category": "Маникюр",
+      "categoryId": "3845562",
+      "price": "от 1 800 ₽",
+      "priceValue": 1800,
+      "priceFrom": true,
+      "duration": "2 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/9808112",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=9808112",
+      "masterIds": [
+        "3168786",
+        "3585520",
+        "4096713",
+        "4589356"
+      ],
+      "offerings": {
+        "3168786": {
+          "price": 1800,
+          "priceFrom": true,
+          "durationMinutes": 120
+        },
+        "3585520": {
+          "price": 1800,
+          "priceFrom": true,
+          "durationMinutes": 150
+        },
+        "4096713": {
+          "price": 1800,
+          "priceFrom": true,
+          "durationMinutes": 120
+        },
+        "4589356": {
+          "price": 1800,
+          "priceFrom": true,
+          "durationMinutes": 120
+        }
+      },
+      "durationMinutes": 120,
+      "maxDurationMinutes": 150
+    },
+    {
+      "id": "13949698",
+      "name": "Маникюр без покрытия",
+      "category": "Маникюр",
+      "categoryId": "3845562",
+      "price": "от 800 ₽",
+      "priceValue": 800,
+      "priceFrom": true,
+      "duration": "40 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/13949698",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=13949698",
+      "masterIds": [
+        "3168786",
+        "3585520",
+        "4096713",
+        "4295706",
+        "4589356"
+      ],
+      "offerings": {
+        "3168786": {
+          "price": 800,
+          "priceFrom": true,
+          "durationMinutes": 60
+        },
+        "3585520": {
+          "price": 800,
+          "priceFrom": true,
+          "durationMinutes": 60
+        },
+        "4096713": {
+          "price": 800,
+          "priceFrom": true,
+          "durationMinutes": 40
+        },
+        "4295706": {
+          "price": 800,
+          "priceFrom": true,
+          "durationMinutes": 40
+        },
+        "4589356": {
+          "price": 800,
+          "priceFrom": true,
+          "durationMinutes": 40
+        }
+      },
+      "durationMinutes": 40,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "13949730",
+      "name": "Маникюр с покрытием",
+      "category": "Маникюр",
+      "categoryId": "3845562",
+      "price": "1 500 ₽",
+      "priceValue": 1500,
+      "priceFrom": false,
+      "duration": "1 ч 30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/13949730",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=13949730",
+      "masterIds": [
+        "3168786",
+        "3585520",
+        "4096713",
+        "4295706",
+        "4589356"
+      ],
+      "offerings": {
+        "3168786": {
+          "price": 1500,
+          "priceFrom": false,
+          "durationMinutes": 120
+        },
+        "3585520": {
+          "price": 1500,
+          "priceFrom": false,
+          "durationMinutes": 120
+        },
+        "4096713": {
+          "price": 1500,
+          "priceFrom": false,
+          "durationMinutes": 90
+        },
+        "4295706": {
+          "price": 1500,
+          "priceFrom": false,
+          "durationMinutes": 120
+        },
+        "4589356": {
+          "price": 1500,
+          "priceFrom": false,
+          "durationMinutes": 90
+        }
+      },
+      "durationMinutes": 90,
+      "maxDurationMinutes": 120
+    },
+    {
+      "id": "9808072",
+      "name": "Наращивание ногтей",
+      "category": "Маникюр",
+      "categoryId": "3845562",
+      "price": "от 2 000 ₽",
+      "priceValue": 2000,
+      "priceFrom": true,
+      "duration": "2 ч 30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/9808072",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=9808072",
+      "masterIds": [
+        "3585520",
+        "4096713",
+        "4589356"
+      ],
+      "offerings": {
+        "3585520": {
+          "price": 2000,
+          "priceFrom": true,
+          "durationMinutes": 150
+        },
+        "4096713": {
+          "price": 2000,
+          "priceFrom": true,
+          "durationMinutes": 150
+        },
+        "4589356": {
+          "price": 2000,
+          "priceFrom": true,
+          "durationMinutes": 150
+        }
+      },
+      "durationMinutes": 150,
+      "maxDurationMinutes": 150
+    },
+    {
+      "id": "23293925",
+      "name": "Массаж",
+      "category": "Массаж",
+      "categoryId": "6131266",
+      "price": "1 000 ₽",
+      "priceValue": 1000,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/23293925",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=23293925",
+      "masterIds": [
+        "4096713"
+      ],
+      "offerings": {
+        "4096713": {
+          "price": 1000,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "21175455",
+      "name": "Наращивание ногтей",
+      "category": "Наращивание ногтей",
+      "categoryId": "4651161",
+      "price": "2 000 ₽",
+      "priceValue": 2000,
+      "priceFrom": false,
+      "duration": "3 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/21175455",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=21175455",
+      "masterIds": [
+        "4295706"
+      ],
+      "offerings": {
+        "4295706": {
+          "price": 2000,
+          "priceFrom": false,
+          "durationMinutes": 180
+        }
+      },
+      "durationMinutes": 180,
+      "maxDurationMinutes": 180
+    },
+    {
+      "id": "16803394",
+      "name": "Снятие без дальнейшего наращивания",
+      "category": "Наращивание ресниц",
+      "categoryId": "4106434",
+      "price": "200 ₽",
+      "priceValue": 200,
+      "priceFrom": false,
+      "duration": "15 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16803394",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16803394",
+      "masterIds": [
+        "4295706"
+      ],
+      "offerings": {
+        "4295706": {
+          "price": 200,
+          "priceFrom": false,
+          "durationMinutes": 15
+        }
+      },
+      "durationMinutes": 15,
+      "maxDurationMinutes": 15
+    },
+    {
+      "id": "17635984",
+      "name": "Ремонт ногтя",
+      "category": "Ремонт ногтя",
+      "categoryId": "4319759",
+      "price": "150 ₽",
+      "priceValue": 150,
+      "priceFrom": false,
+      "duration": "20 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/17635984",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=17635984",
+      "masterIds": [
+        "4096713",
+        "4295706"
+      ],
+      "offerings": {
+        "4096713": {
+          "price": 150,
+          "priceFrom": false,
+          "durationMinutes": 20
+        },
+        "4295706": {
+          "price": 150,
+          "priceFrom": false,
+          "durationMinutes": 20
+        }
+      },
+      "durationMinutes": 20,
+      "maxDurationMinutes": 20
+    },
+    {
+      "id": "22336669",
+      "name": "Бедра (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "900 ₽",
+      "priceValue": 900,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22336669",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22336669",
+      "masterIds": [
+        "4120856"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 900,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "16546488",
+      "name": "Бедра (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "700 ₽",
+      "priceValue": 700,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16546488",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16546488",
+      "masterIds": [
+        "4120856"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 700,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "16546592",
+      "name": "Верхняя губа",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "300 ₽",
+      "priceValue": 300,
+      "priceFrom": false,
+      "duration": "15 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16546592",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16546592",
+      "masterIds": [
+        "4120856"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 300,
+          "priceFrom": false,
+          "durationMinutes": 15
+        }
+      },
+      "durationMinutes": 15,
+      "maxDurationMinutes": 15
+    },
+    {
+      "id": "20747503",
+      "name": "Глубокое бикини (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "1 100 ₽",
+      "priceValue": 1100,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/20747503",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=20747503",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 1100,
+          "priceFrom": false,
+          "durationMinutes": 60
+        },
+        "4569944": {
+          "price": 1100,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "22336631",
+      "name": "Глубокое бикини (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "900 ₽",
+      "priceValue": 900,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22336631",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22336631",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 900,
+          "priceFrom": false,
+          "durationMinutes": 60
+        },
+        "4569944": {
+          "price": 900,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "22337644",
+      "name": "Глубокое бикини + подмышки",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "1 100 ₽",
+      "priceValue": 1100,
+      "priceFrom": false,
+      "duration": "1 ч 20 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22337644",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22337644",
+      "masterIds": [
+        "4569944"
+      ],
+      "offerings": {
+        "4569944": {
+          "price": 1100,
+          "priceFrom": false,
+          "durationMinutes": 80
+        }
+      },
+      "durationMinutes": 80,
+      "maxDurationMinutes": 80
+    },
+    {
+      "id": "20747515",
+      "name": "Глубокое бикини + подмышки (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "1 300 ₽",
+      "priceValue": 1300,
+      "priceFrom": false,
+      "duration": "1 ч 30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/20747515",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=20747515",
+      "masterIds": [
+        "4569944"
+      ],
+      "offerings": {
+        "4569944": {
+          "price": 1300,
+          "priceFrom": false,
+          "durationMinutes": 90
+        }
+      },
+      "durationMinutes": 90,
+      "maxDurationMinutes": 90
+    },
+    {
+      "id": "22337568",
+      "name": "Глубокое бикини + подмышки + голени (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "1 900 ₽",
+      "priceValue": 1900,
+      "priceFrom": false,
+      "duration": "2 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22337568",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22337568",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 1900,
+          "priceFrom": false,
+          "durationMinutes": 120
+        },
+        "4569944": {
+          "price": 1900,
+          "priceFrom": false,
+          "durationMinutes": 120
+        }
+      },
+      "durationMinutes": 120,
+      "maxDurationMinutes": 120
+    },
+    {
+      "id": "22337574",
+      "name": "Глубокое бикини + подмышки + голени (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "1 700 ₽",
+      "priceValue": 1700,
+      "priceFrom": false,
+      "duration": "2 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22337574",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22337574",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 1700,
+          "priceFrom": false,
+          "durationMinutes": 120
+        },
+        "4569944": {
+          "price": 1700,
+          "priceFrom": false,
+          "durationMinutes": 120
+        }
+      },
+      "durationMinutes": 120,
+      "maxDurationMinutes": 120
+    },
+    {
+      "id": "22335805",
+      "name": "Глубокое бикини + подмышки + голени с коленом",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "2 200 ₽",
+      "priceValue": 2200,
+      "priceFrom": false,
+      "duration": "2 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22335805",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22335805",
+      "masterIds": [
+        "4569944"
+      ],
+      "offerings": {
+        "4569944": {
+          "price": 2200,
+          "priceFrom": false,
+          "durationMinutes": 120
+        }
+      },
+      "durationMinutes": 120,
+      "maxDurationMinutes": 120
+    },
+    {
+      "id": "22335827",
+      "name": "Глубокое бикини + подмышки + ноги полностью (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "2 300 ₽",
+      "priceValue": 2300,
+      "priceFrom": false,
+      "duration": "2 ч 45 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22335827",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22335827",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 2300,
+          "priceFrom": false,
+          "durationMinutes": 165
+        },
+        "4569944": {
+          "price": 2300,
+          "priceFrom": false,
+          "durationMinutes": 165
+        }
+      },
+      "durationMinutes": 165,
+      "maxDurationMinutes": 165
+    },
+    {
+      "id": "22337604",
+      "name": "Глубокое бикини + подмышки + ноги полностью (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "2 100 ₽",
+      "priceValue": 2100,
+      "priceFrom": false,
+      "duration": "2 ч 45 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22337604",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22337604",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 2100,
+          "priceFrom": false,
+          "durationMinutes": 165
+        },
+        "4569944": {
+          "price": 2100,
+          "priceFrom": false,
+          "durationMinutes": 165
+        }
+      },
+      "durationMinutes": 165,
+      "maxDurationMinutes": 165
+    },
+    {
+      "id": "22336693",
+      "name": "Голени с коленом (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "800 ₽",
+      "priceValue": 800,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22336693",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22336693",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 800,
+          "priceFrom": false,
+          "durationMinutes": 60
+        },
+        "4569944": {
+          "price": 800,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "16546514",
+      "name": "Голени с коленом (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "700 ₽",
+      "priceValue": 700,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16546514",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16546514",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 700,
+          "priceFrom": false,
+          "durationMinutes": 60
+        },
+        "4569944": {
+          "price": 700,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "22337493",
+      "name": "Ноги полностью (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "1 400 ₽",
+      "priceValue": 1400,
+      "priceFrom": false,
+      "duration": "1 ч 30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22337493",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22337493",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 1400,
+          "priceFrom": false,
+          "durationMinutes": 90
+        },
+        "4569944": {
+          "price": 1400,
+          "priceFrom": false,
+          "durationMinutes": 90
+        }
+      },
+      "durationMinutes": 90,
+      "maxDurationMinutes": 90
+    },
+    {
+      "id": "20557738",
+      "name": "Ноги полностью (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "1 200 ₽",
+      "priceValue": 1200,
+      "priceFrom": false,
+      "duration": "1 ч 30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/20557738",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=20557738",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 1200,
+          "priceFrom": false,
+          "durationMinutes": 90
+        },
+        "4569944": {
+          "price": 1200,
+          "priceFrom": false,
+          "durationMinutes": 90
+        }
+      },
+      "durationMinutes": 90,
+      "maxDurationMinutes": 90
+    },
+    {
+      "id": "20078321",
+      "name": "Нос удаление волос",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "250 ₽",
+      "priceValue": 250,
+      "priceFrom": false,
+      "duration": "15 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/20078321",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=20078321",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 250,
+          "priceFrom": false,
+          "durationMinutes": 15
+        },
+        "4569944": {
+          "price": 250,
+          "priceFrom": false,
+          "durationMinutes": 15
+        }
+      },
+      "durationMinutes": 15,
+      "maxDurationMinutes": 15
+    },
+    {
+      "id": "16546602",
+      "name": "Подбородок",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "300 ₽",
+      "priceValue": 300,
+      "priceFrom": false,
+      "duration": "15 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16546602",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16546602",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 300,
+          "priceFrom": false,
+          "durationMinutes": 15
+        },
+        "4569944": {
+          "price": 300,
+          "priceFrom": false,
+          "durationMinutes": 15
+        }
+      },
+      "durationMinutes": 15,
+      "maxDurationMinutes": 15
+    },
+    {
+      "id": "20747510",
+      "name": "Подмышки (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "500 ₽",
+      "priceValue": 500,
+      "priceFrom": false,
+      "duration": "25 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/20747510",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=20747510",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 500,
+          "priceFrom": false,
+          "durationMinutes": 25
+        },
+        "4569944": {
+          "price": 500,
+          "priceFrom": false,
+          "durationMinutes": 25
+        }
+      },
+      "durationMinutes": 25,
+      "maxDurationMinutes": 25
+    },
+    {
+      "id": "22337455",
+      "name": "Подмышки (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "400 ₽",
+      "priceValue": 400,
+      "priceFrom": false,
+      "duration": "25 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22337455",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22337455",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 25
+        },
+        "4569944": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 25
+        }
+      },
+      "durationMinutes": 25,
+      "maxDurationMinutes": 25
+    },
+    {
+      "id": "16546616",
+      "name": "Поясничная область",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "400 ₽",
+      "priceValue": 400,
+      "priceFrom": false,
+      "duration": "30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16546616",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16546616",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 30
+        },
+        "4569944": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 30
+        }
+      },
+      "durationMinutes": 30,
+      "maxDurationMinutes": 30
+    },
+    {
+      "id": "16546556",
+      "name": "Руки до локтя (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "700 ₽",
+      "priceValue": 700,
+      "priceFrom": false,
+      "duration": "45 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16546556",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16546556",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 700,
+          "priceFrom": false,
+          "durationMinutes": 45
+        },
+        "4569944": {
+          "price": 700,
+          "priceFrom": false,
+          "durationMinutes": 45
+        }
+      },
+      "durationMinutes": 45,
+      "maxDurationMinutes": 45
+    },
+    {
+      "id": "22337507",
+      "name": "Руки до локтя (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "500 ₽",
+      "priceValue": 500,
+      "priceFrom": false,
+      "duration": "45 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22337507",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22337507",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 500,
+          "priceFrom": false,
+          "durationMinutes": 45
+        },
+        "4569944": {
+          "price": 500,
+          "priceFrom": false,
+          "durationMinutes": 45
+        }
+      },
+      "durationMinutes": 45,
+      "maxDurationMinutes": 45
+    },
+    {
+      "id": "16546572",
+      "name": "Руки полностью (воск)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "1 000 ₽",
+      "priceValue": 1000,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16546572",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16546572",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 1000,
+          "priceFrom": false,
+          "durationMinutes": 60
+        },
+        "4569944": {
+          "price": 1000,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "22337515",
+      "name": "Руки полностью (сахар)",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "800 ₽",
+      "priceValue": 800,
+      "priceFrom": false,
+      "duration": "1 ч",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/22337515",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=22337515",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 800,
+          "priceFrom": false,
+          "durationMinutes": 60
+        },
+        "4569944": {
+          "price": 800,
+          "priceFrom": false,
+          "durationMinutes": 60
+        }
+      },
+      "durationMinutes": 60,
+      "maxDurationMinutes": 60
+    },
+    {
+      "id": "16546466",
+      "name": "Ягодицы",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "500 ₽",
+      "priceValue": 500,
+      "priceFrom": false,
+      "duration": "30 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/16546466",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=16546466",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 500,
+          "priceFrom": false,
+          "durationMinutes": 30
+        },
+        "4569944": {
+          "price": 500,
+          "priceFrom": false,
+          "durationMinutes": 30
+        }
+      },
+      "durationMinutes": 30,
+      "maxDurationMinutes": 30
+    },
+    {
+      "id": "20078330",
+      "name": "Ягодичная складка",
+      "category": "Шугаринг",
+      "categoryId": "4038240",
+      "price": "400 ₽",
+      "priceValue": 400,
+      "priceFrom": false,
+      "duration": "15 м",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/service/20078330",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=2&ss_s=20078330",
+      "masterIds": [
+        "4120856",
+        "4569944"
+      ],
+      "offerings": {
+        "4120856": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 15
+        },
+        "4569944": {
+          "price": 400,
+          "priceFrom": false,
+          "durationMinutes": 15
+        }
+      },
+      "durationMinutes": 15,
+      "maxDurationMinutes": 15
+    }
+  ],
+  "masters": [
+    {
+      "id": "3168786",
+      "name": "Марина",
+      "role": "Мастер маникюра",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/master/3168786",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=3168786",
+      "imageSource": "https://f1.dikidi.net/c11/v10532/2pck850b4t.jpg?size=m",
+      "image": "assets/team/3168786.webp",
+      "serviceIds": [
+        "13949200",
+        "11473226",
+        "11473332",
+        "9808112",
+        "13949698",
+        "13949730"
+      ],
+      "offeringsSource": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=3168786"
+    },
+    {
+      "id": "3585520",
+      "name": "Наталья",
+      "role": "мастер маникюра/педикюра",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/master/3585520",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=3585520",
+      "imageSource": "https://f2.dikidi.net/c16/v15696/8p4dle4fcd.jpg?size=m",
+      "image": "assets/team/3585520.webp",
+      "serviceIds": [
+        "11473226",
+        "11473332",
+        "9808112",
+        "13949698",
+        "13949730",
+        "9808072"
+      ],
+      "offeringsSource": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=3585520"
+    },
+    {
+      "id": "4096713",
+      "name": "Эмилия",
+      "role": "Мастер маникюра",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/master/4096713",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4096713",
+      "imageSource": "https://f2.dikidi.net/c20/v19219/2ivqjgq0d9.jpg?size=m",
+      "image": "assets/team/4096713.webp",
+      "serviceIds": [
+        "18942594",
+        "16488520",
+        "11473226",
+        "11473332",
+        "9808112",
+        "13949698",
+        "13949730",
+        "9808072",
+        "23293925",
+        "17635984"
+      ],
+      "offeringsSource": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4096713"
+    },
+    {
+      "id": "4120856",
+      "name": "Кристина",
+      "role": "мастер шугаринга",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/master/4120856",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4120856",
+      "imageSource": "https://f2.dikidi.net/c26/v25909/29fn4frugv.jpg?size=m",
+      "image": "assets/team/4120856.webp",
+      "serviceIds": [
+        "22336669",
+        "16546488",
+        "16546592",
+        "20747503",
+        "22336631",
+        "22337568",
+        "22337574",
+        "22335827",
+        "22337604",
+        "22336693",
+        "16546514",
+        "22337493",
+        "20557738",
+        "20078321",
+        "16546602",
+        "20747510",
+        "22337455",
+        "16546616",
+        "16546556",
+        "22337507",
+        "16546572",
+        "22337515",
+        "16546466",
+        "20078330"
+      ],
+      "offeringsSource": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4120856"
+    },
+    {
+      "id": "4295706",
+      "name": "Яна",
+      "role": "Мастер маникюра",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/master/4295706",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4295706",
+      "imageSource": "https://f2.dikidi.net/c24/v23004/26cr9mpu6l.jpg?size=m",
+      "image": "assets/team/4295706.webp",
+      "serviceIds": [
+        "16488540",
+        "16488520",
+        "11473332",
+        "18942646",
+        "13949698",
+        "13949730",
+        "21175455",
+        "16803394",
+        "17635984"
+      ],
+      "offeringsSource": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4295706"
+    },
+    {
+      "id": "4569944",
+      "name": "Полина",
+      "role": "ШУГАРИНГ",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/master/4569944",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4569944",
+      "imageSource": "https://f2.dikidi.net/c28/v27603/7u74so61af.jpg?size=m",
+      "image": "assets/team/4569944.webp",
+      "serviceIds": [
+        "20747503",
+        "22336631",
+        "22337644",
+        "20747515",
+        "22337568",
+        "22337574",
+        "22335805",
+        "22335827",
+        "22337604",
+        "22336693",
+        "16546514",
+        "22337493",
+        "20557738",
+        "20078321",
+        "16546602",
+        "20747510",
+        "22337455",
+        "16546616",
+        "16546556",
+        "22337507",
+        "16546572",
+        "22337515",
+        "16546466",
+        "20078330"
+      ],
+      "offeringsSource": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4569944"
+    },
+    {
+      "id": "4589356",
+      "name": "Ирина",
+      "role": "маникюр",
+      "source": "https://dikidi.net/ru/profile/salon_krasoty_amur_1006138/master/4589356",
+      "bookingUrl": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4589356",
+      "imageSource": "https://dikidi.net/assets/images/profile/master.png",
+      "image": "",
+      "serviceIds": [
+        "11473198",
+        "23306397",
+        "18942594",
+        "11473226",
+        "9808112",
+        "13949698",
+        "13949730",
+        "9808072"
+      ],
+      "offeringsSource": "https://dikidi.net/ru/record/1006138?st_m=1&sm_m=4589356"
+    }
+  ],
+  "verifiedOfferingCount": 87
+}
