@@ -29,7 +29,7 @@ class StaticCheck(HTMLParser):
         if tag=='a' and a.get('href','').startswith('#'): self.hashes.append(a['href'][1:])
         if tag in ['img','link','script']:
             path=a.get('src',a.get('href',''))
-            if path.startswith('./'): self.files.append(path[2:])
+            if path.startswith('./'): self.files.append(path[2:].split('?',1)[0])
         if a.get('data-image'): self.files.append('assets/'+a['data-image']+'.webp')
 static=StaticCheck();static.feed((ROOT/'index.html').read_text())
 assert len(static.ids)==len(set(static.ids)),'Duplicate HTML IDs'
@@ -58,26 +58,7 @@ try:
                 page.wait_for_timeout(1000)
                 page.screenshot(path=str(OUT/f'preview-{width}.png'),full_page=True)
             expect(page.locator('.work-card:visible')).to_have_count(4)
-            page.locator('#tab-brows').click()
-            expect(page.locator('#panel-brows')).to_be_visible()
-            expect(page.locator('#panel-nails')).to_be_hidden()
-            page.locator('.more-prices summary').click()
-            expect(page.locator('#panel-brows .price-row:visible')).to_have_count(8)
-            selected=page.locator('#panel-brows .price-row').first
-            selected.click()
-            expect(page.locator('#booking-dialog')).to_be_visible()
-            expect(page.locator('#selected-service')).to_contain_text('Коррекция бровей')
-            assert page.locator('#booking-dialog .booking-option').count()==3
-            assert page.locator('#booking-dialog .is-primary').get_attribute('href')=='https://dikidi.net/1006138'
-            if width==390: page.screenshot(path=str(OUT/'booking-mobile.png'))
-            page.keyboard.press('Escape')
-            expect(page.locator('#booking-dialog')).not_to_be_visible()
-            expect(selected).to_be_focused()
-            page.locator('#tab-brows').focus();page.keyboard.press('ArrowRight')
-            expect(page.locator('#tab-extra')).to_have_attribute('aria-selected','true')
-            expect(page.locator('#panel-extra')).to_be_visible()
-            page.keyboard.press('Home')
-            expect(page.locator('#tab-nails')).to_have_attribute('aria-selected','true')
+            # Full catalog and booking steps are covered by booking_smoke.py.
             page.locator('[data-filter="brows"]').click()
             expect(page.locator('.work-card:visible')).to_have_count(1)
             page.locator('.work-card:visible').click()
@@ -132,7 +113,7 @@ except Exception:
 finally:
     (OUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
     # Portable website copy, with only files used by the demo; no font binaries.
-    files={'index.html','styles.css','app.js','.nojekyll','README.md','CONTENT-SOURCES.md','assets/sources.json',*static.files}
+    files={'index.html','styles.css','app.js','.nojekyll','README.md','CONTENT-SOURCES.md','assets/sources.json','booking.js','booking-flow.css','data/catalog.json',*static.files}
     with zipfile.ZipFile(OUT/'amur-beauty-demo.zip','w',zipfile.ZIP_DEFLATED) as archive:
         for name in sorted(files):
             if (ROOT/name).is_file():archive.write(ROOT/name,'amur-beauty/'+name)
