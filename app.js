@@ -29,6 +29,119 @@
   $$('nav a', menu).forEach(anchor => anchor.addEventListener('click', () => menu.close()));
   $('#demo-info').addEventListener('click', event => openDialog($('#demo-dialog'), event.currentTarget));
 
+  // Keep native <details> semantics; animate the measured height in both directions.
+  const faqMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  $$('.faq-list details').forEach((details, index) => {
+    const summary = details.querySelector(':scope > summary');
+    const answer = summary?.nextElementSibling;
+    if (!summary || !answer || typeof details.animate !== 'function') return;
+
+    const icon = $('.icon', summary);
+    const originalHeight = details.style.height;
+    const originalOverflow = details.style.overflow;
+    let expanded = details.open;
+    let animations = [];
+    let revision = 0;
+    let answerWidth = 0;
+    let answerHeight = 0;
+
+    if (!answer.id) answer.id = `faq-answer-${index + 1}`;
+    summary.setAttribute('aria-controls', answer.id);
+    summary.setAttribute('aria-expanded', String(expanded));
+    // The icon follows the same timeline as the panel, including closing/reversals.
+    if (icon) icon.style.transition = 'none';
+
+    function finish() {
+      revision += 1;
+      details.open = expanded;
+      details.style.height = originalHeight;
+      details.style.overflow = originalOverflow;
+      animations.forEach(animation => animation.cancel());
+      animations = [];
+      summary.setAttribute('aria-expanded', String(expanded));
+    }
+
+    function animateTo(nextExpanded) {
+      // Capture the currently painted frame before cancelling an interrupted toggle.
+      const startHeight = details.getBoundingClientRect().height;
+      const startOpacity = details.open ? getComputedStyle(answer).opacity : '0';
+      const startRotation = icon ? getComputedStyle(icon).transform : 'none';
+      const currentRevision = ++revision;
+      animations.forEach(animation => animation.cancel());
+      animations = [];
+      expanded = nextExpanded;
+      summary.setAttribute('aria-expanded', String(expanded));
+
+      if (faqMotion.matches) {
+        finish();
+        return;
+      }
+
+      // Keep the answer rendered until closing finishes. No arbitrary max-height.
+      details.open = true;
+      details.style.height = 'auto';
+      details.style.overflow = 'hidden';
+      const openHeight = details.getBoundingClientRect().height;
+      const style = getComputedStyle(details);
+      const closedHeight = summary.getBoundingClientRect().height +
+        parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) +
+        parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
+      const endHeight = expanded ? openHeight : closedHeight;
+      const answerRect = answer.getBoundingClientRect();
+      answerWidth = answerRect.width;
+      answerHeight = answerRect.height;
+      details.style.height = `${startHeight}px`;
+
+      if (Math.abs(endHeight - startHeight) < 0.5) {
+        finish();
+        return;
+      }
+
+      const timing = {
+        duration: expanded ? 340 : 280,
+        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+        fill: 'both'
+      };
+      const heightAnimation = details.animate(
+        { height: [`${startHeight}px`, `${endHeight}px`] }, timing
+      );
+      animations = [heightAnimation, answer.animate(
+        { opacity: [startOpacity, expanded ? '1' : '0'] }, timing
+      )];
+      if (icon) animations.push(icon.animate(
+        { transform: [startRotation, expanded ? 'rotate(45deg)' : 'rotate(0deg)'] }, timing
+      ));
+      heightAnimation.onfinish = () => {
+        if (revision === currentRevision) finish();
+      };
+    }
+
+    summary.addEventListener('click', event => {
+      // Preserve links/buttons if a question later gains an independent action.
+      if (event.defaultPrevented || event.target.closest('a, button, input, select, textarea')) return;
+      event.preventDefault();
+      animateTo(!expanded);
+    });
+    details.addEventListener('toggle', () => {
+      if (animations.length) return;
+      expanded = details.open;
+      summary.setAttribute('aria-expanded', String(expanded));
+    });
+    faqMotion.addEventListener('change', () => {
+      if (faqMotion.matches && animations.length) finish();
+    });
+    if (typeof ResizeObserver === 'function') {
+      new ResizeObserver(() => {
+        if (!animations.length) return;
+        const rect = answer.getBoundingClientRect();
+        // Retarget if line wrapping or fonts change mid-animation, not every frame.
+        if (Math.abs(rect.width - answerWidth) > 0.5 || Math.abs(rect.height - answerHeight) > 0.5) {
+          animateTo(expanded);
+        }
+      }).observe(answer);
+    }
+  });
+
   const cards = $$('.work-card');
   const filters = $$('.filter');
   let activeFilter = 'all';

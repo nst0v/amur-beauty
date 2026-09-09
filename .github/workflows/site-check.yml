@@ -32,6 +32,8 @@ jobs:
         run: |
           python3 -m pip install playwright
           python3 -m playwright install --with-deps chromium webkit
+      - name: Check smooth FAQ opening, closing, rapid toggles and reduced motion
+        run: python3 -u tests/faq_motion.py
       - name: Check hero contour, spacing and card alignment in Chromium and WebKit
         run: python3 scripts/fix-mobile-hero-note.py --verify
       - name: Check full catalog, selected states and live embedded calendar
