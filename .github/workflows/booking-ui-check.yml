@@ -23,9 +23,11 @@ jobs:
       - name: Install browser tests
         run: |
           python3 -m pip install playwright
-          python3 -m playwright install --with-deps chromium
+          python3 -m playwright install --with-deps chromium webkit
       - name: Test seven screen sizes, exact service mappings and live calendar
         run: python3 -u tests/booking_smoke.py
+      - name: Check touch interactions in WebKit
+        run: python3 -u tests/booking_webkit.py
       - name: Check existing gallery, page assets and no-JavaScript fallback
         run: python3 -u tests/browser_check.py
       - uses: actions/upload-artifact@v4
@@ -51,6 +53,6 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add index.html app.js tests/browser_check.py
           if ! git diff --staged --quiet; then
-            git commit -m 'build: render verified 44-service catalog, seven masters and embedded booking flow'
+            git commit -m 'build: render verified complete catalog and embedded booking flow'
             git push origin HEAD:${{ github.ref_name }}
           fi

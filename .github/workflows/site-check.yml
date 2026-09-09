@@ -6,6 +6,9 @@ on:
       - 'index.html'
       - 'styles.css'
       - 'app.js'
+      - 'booking.js'
+      - 'booking-flow.css'
+      - 'data/**'
       - 'assets/**'
       - 'tests/**'
       - '.github/workflows/site-check.yml'
@@ -22,14 +25,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check JavaScript syntax
-        run: node --check app.js
+        run: |
+          node --check app.js
+          node --check booking.js
       - name: Install browser test tools
         run: |
           python3 -m pip install playwright
           python3 -m playwright install --with-deps chromium webkit
       - name: Check hero contour, spacing and card alignment in Chromium and WebKit
         run: python3 scripts/fix-mobile-hero-note.py --verify
-      - name: Check mobile layouts, prices, booking, gallery and keyboard access
+      - name: Check full catalog, selected states and live embedded calendar
+        run: python3 -u tests/booking_smoke.py
+      - name: Check WebKit touch interactions
+        run: python3 -u tests/booking_webkit.py
+      - name: Check mobile layouts, gallery and keyboard access
         run: python3 tests/browser_check.py
       - uses: actions/upload-artifact@v4
         if: always()
