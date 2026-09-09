@@ -1,0 +1,56 @@
+name: Verify complete booking flow
+on:
+  push:
+    branches: [booking-complete-catalog]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: booking-ui-check-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate public catalog and booking entry points
+        run: python3 scripts/build-booking-page.py
+      - name: Validate JavaScript syntax
+        run: |
+          node --check app.js
+          node --check booking.js
+      - name: Install browser tests
+        run: |
+          python3 -m pip install playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Test seven screen sizes, exact service mappings and live calendar
+        run: python3 -u tests/booking_smoke.py
+      - name: Check existing gallery, page assets and no-JavaScript fallback
+        run: python3 -u tests/browser_check.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: amur-booking-ui-preview
+          path: |
+            test-results/
+            index.html
+            app.js
+            booking.js
+            booking-flow.css
+            styles.css
+            data/catalog.json
+            tests/
+            scripts/build-booking-page.py
+          retention-days: 7
+          if-no-files-found: error
+      - name: Commit verified generated page to the feature branch
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html app.js tests/browser_check.py
+          if ! git diff --staged --quiet; then
+            git commit -m 'build: render verified 44-service catalog, seven masters and embedded booking flow'
+            git push origin HEAD:${{ github.ref_name }}
+          fi
