@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=hero-layout-2">
   <script src="./app.js" defer></script>
 </head>
 <body>
@@ -58,11 +58,18 @@
         <div class="hero-location"><svg class="icon"><use href="#i-pin"/></svg><span>Проспект Строителей, 22А <span class="location-separator">·</span> 3 этаж</span></div>
       </div>
       <div class="hero-visual">
-        <div class="hero-orbit" aria-hidden="true"></div>
-        <div class="hero-image-wrap"><img class="hero-image" src="./assets/hero-nails.webp" alt="Маникюр студии Амур: нежное покрытие на руках, лежащих на журнале" width="810" height="1080" fetchpriority="high"><span class="image-caption">В ДЕТАЛЯХ — ЛЮБОВЬ</span></div>
-        <div class="hero-note"><svg class="icon"><use href="#i-heart"/></svg><span>Работаем<br> <em>ежедневно 09:00–21:00</em></span></div>
-        <a class="rating-pill" href="https://yandex.ru/maps/org/amur/202060827340/reviews/" target="_blank" rel="noopener noreferrer" aria-label="Рейтинг студии 5,0 из 5 на Яндекс Картах"><span class="rating-star" aria-hidden="true">★</span><strong>5,0</strong><span>нам доверяют<br> <b>по оценкам на Яндекс Картах</b></span><svg class="icon"><use href="#i-up"/></svg></a>
-        <span class="hero-side-label" aria-hidden="true">AMUR BEAUTY STUDIO</span>
+        <div class="hero-image-wrap"><img class="hero-image" src="./assets/hero-nails.webp" alt="Маникюр студии Амур: нежное покрытие на руках, лежащих на журнале" width="810" height="1080" fetchpriority="high"></div>
+        <div class="hero-meta">
+          <div class="hero-note">
+            <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+            <span><span class="hero-meta-label">Ежедневно</span><strong>09:00–21:00</strong></span>
+          </div>
+          <a class="rating-pill" href="https://yandex.ru/maps/org/amur/202060827340/reviews/" target="_blank" rel="noopener noreferrer" aria-label="Рейтинг студии 5,0 из 5 на Яндекс Картах">
+            <span class="rating-star" aria-hidden="true">★</span>
+            <span class="hero-rating-value"><strong>5,0</strong><span class="hero-meta-label">Яндекс Карты</span></span>
+            <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>
+          </a>
+        </div>
       </div>
     </section>
 
